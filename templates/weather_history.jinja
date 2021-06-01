@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather History</title>
+</head>
+<body>
+    {% if error %}
+        <p>{{ error }} </p>
+    {% else %}
+        <p>It was {{ temp }} in {{ location }} at {{ date }}</p>
+    {% endif %}
+</body>
+</html>
