@@ -7,7 +7,7 @@ import config
 Base = declarative_base()
 
 engine = create_engine(
-    f"postgresql://{config.DB_USER}:{config.DB_PASSWORD}.@ec2-108-128-104-50.eu-west-1.compute.amazonaws.com:5432/dbk3qt8k0c5sig"
+    f"postgresql://{config.DB_USER}:{config.DB_PASSWORD}@ec2-108-128-104-50.eu-west-1.compute.amazonaws.com:5432/dbk3qt8k0c5sig"
 )
 Base.metadata.create_all(engine)
 
