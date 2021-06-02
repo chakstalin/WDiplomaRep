@@ -40,6 +40,8 @@ def main_form():
 def get_weather_history():
     location = request.args.get("location")
     date = request.args.get("date")
+    if location or date:
+        return render_template("weather_history.jinja", error="Ошибка")
 
     try:
         temp = get_temp_for_location(location, date)
