@@ -3,7 +3,7 @@
         "body": {
             "background": {
                 "type": "html",
-                "url": "https://dipweather.herokuapp.com",
+                "url": "https://google.com",
                 "style": {
                     "background": "#ffffff",
                     "progress" : "rgba(0,0,0,0)"
